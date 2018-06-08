@@ -1,0 +1,53 @@
+
+#Question 1
+print('I am iron man')
+I am iron man
+
+
+#Question 2
+A='hello'
+B='World'
+A+B
+'helloWorld'
+
+
+#Question 3
+x=input()
+5
+y=input()
+9
+z=input()
+67
+x
+'5'
+y
+'9'
+z
+'67'
+
+
+#Question 4
+print('lets get started')
+lets get started
+
+
+#Question 5
+s='Acadview'
+course='Python'
+fees=5000
+print('%s %s %d' %(s,course,fees))
+Acadview Python 5000
+ 
+
+
+#Question 6
+name='Tony Stark'
+salary=1000000
+print('%s''%d')%(name,salary)
+
+
+
+
+
+
+
