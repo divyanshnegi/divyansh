@@ -27,8 +27,8 @@ z
 
 
 #Question 4
-print('lets get started')
-lets get started
+print(“Let’s get started”)
+Let’s get started
 
 
 #Question 5
