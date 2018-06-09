@@ -1,0 +1,75 @@
+#Tuples
+
+Question 1
+
+ tuple=('7','hi','9.0','[5,9,6]')       
+   print(len(tuple))    
+4
+
+
+Question 2
+
+tuple=('6','hi','9.0','[5,9,6]')
+max(tuple)
+'hi'  
+
+   min(tuple)
+       
+'6'
+
+
+Question 3
+
+s=(5,23,9)
+   m=0
+   for x in s:
+            m=s[0]*x 
+   print(m)
+25
+115
+45
+
+
+#Sets
+
+Question 1
+
+g={3,4,9,6}
+   h={1,2,3,4}
+  	 
+1. print(g.difference(h))  
+{9, 6}
+   
+2. print(set(g)^set(h))
+{1, 2, 6, 9}
+  
+3. print(g.intersection(h))
+{3, 4}
+
+
+#DICTIONARY
+
+Question 1
+
+s={'Divyansh':89,'Ashutosh':64,'prerak':78,'kartikey':92}
+
+          
+Question 2    
+
+s={'Divyansh':89,'Ashutosh':64,'prerak':78,'kartikey':92}
+sort= sorted(s.items(), key=lambda x: x[1])
+   print (sort)
+[('Ashutosh', 64), ('prerak', 78), ('Divyansh', 89), ('kartikey', 92)]
+
+   	
+Question 3
+
+a="MISSISSIPPI"
+dict((letter,a.count(letter))
+ for letter in set(a))
+{'M': 1, 'I': 4, 'P': 2, 'S': 4}
+v={}
+v=dict((letter,a.count(letter))
+ for letter in set(a))
+
+
