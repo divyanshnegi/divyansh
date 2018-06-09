@@ -1,0 +1,108 @@
+
+#Question 1
+
+myList=input('please enter the values of the list:')
+please enter the values of the list:1,2,3,4,5
+myList=[int(x) for x in myList.split(',')]
+print (myList)
+[1, 2, 3, 4, 5]
+
+
+#Question 2
+
+myList=input('please enter the values of the list:')
+please enter the values of the list:1,3,4,5,6,7,8,9
+myList=([str(x) for x in myList.split(',')])
+myList.append(['google','apple','facebook','microsoft','tesla'])
+print(myList)
+['1', '3', '4', '5', '6', '7', '8', '9', ['google', 'apple', 'facebook', 'microsoft', 'tesla']]
+
+
+#Question 3
+
+
+myList=['google','apple','facebook','tesla','microsoft','google','tesla','apple','facebook','tesla','google','tesla']
+print("count:",myList)
+count: ['google', 'apple', 'facebook', 'tesla', 'microsoft', 'google', 'tesla', 'apple', 'facebook', 'tesla', 'google', 'tesla']
+ 
+
+
+#Question 4
+
+
+myList=[5,6,9,4,7,3,8,3,8,4,6,4,7]
+myList.sort()
+print('sorted list:',myList)
+sorted list: [3, 3, 4, 4, 4, 5, 6, 6, 7, 7, 8, 8, 9]
+
+
+
+#Question 5
+
+
+A=[5,6,9,4,7,3,8,3,8,4,6,4,7]
+A.sort()
+print('Sorted array:A',A)
+Sorted array:A [3, 3, 4, 4, 4, 5, 6, 6, 7, 7, 8, 8, 9]
+
+B=[4,7,8,7,6,4,3,3,4,5,5,4,9]
+B.sort()
+print('Sorted array:B',B)
+Sorted array:B [3, 3, 4, 4, 4, 4, 5, 5, 6, 7, 7, 8, 9]
+
+C=[]
+C=A+B;
+C.sort()
+print('\nSorted array:C',C)
+
+Sorted array:C [3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 9, 9]
+ 
+
+
+#Question 6
+
+#Stack
+stack=['google','apple','facebook','microsoft','tesla']
+
+#Push operation 
+stack.append('BMW')
+stack.append('IBM')
+print('result of append:\n',stack)
+result of append:
+['google', 'apple', 'facebook', 'microsoft', 'tesla', 'BMW', 'IBM']
+
+#Queue
+from collections import deque
+
+Queue=deque(['google','apple','facebook','microsoft','tesla'])
+Queue.append('BMW')
+Queue.append('IBM')
+print(Queue)
+result of append:
+deque(['google', 'apple', 'facebook', 'microsoft', 'tesla', 'BMW', 'IBM'])
+ 
+print('pop:',Queue.popleft())
+pop: google
+print(Queue)
+deque(['apple', 'facebook', 'microsoft', 'tesla', 'BMW', 'IBM'])
+print('pop:',Queue.popleft())
+pop: apple
+print(Queue)
+deque(['facebook', 'microsoft', 'tesla', 'BMW', 'IBM'])
+ 
+
+#Question 7
+
+list=[1,2,3,4,5,6,7,8,9]
+count_even=0
+count_odd=0
+for x in list:
+        if not x%2:
+           count_even+=1
+       else:
+            count_odd+=1
+print("Number of even numbers:",count_even)
+Number of even numbers: 4
+
+print("Number of odd numbers:",count_odd)
+Number of odd numbers: 5
