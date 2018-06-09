@@ -67,8 +67,7 @@ stack=['google','apple','facebook','microsoft','tesla']
 #Push operation 
 stack.append('BMW')
 stack.append('IBM')
-print('result of append:\n',stack)
-result of append:
+print(stack)
 ['google', 'apple', 'facebook', 'microsoft', 'tesla', 'BMW', 'IBM']
 
 #Queue
@@ -78,7 +77,6 @@ Queue=deque(['google','apple','facebook','microsoft','tesla'])
 Queue.append('BMW')
 Queue.append('IBM')
 print(Queue)
-result of append:
 deque(['google', 'apple', 'facebook', 'microsoft', 'tesla', 'BMW', 'IBM'])
  
 print('pop:',Queue.popleft())
