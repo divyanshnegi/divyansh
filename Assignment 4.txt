@@ -1,4 +1,4 @@
-#Tuples
+.#Tuples
 
 Question 1
 
@@ -21,9 +21,9 @@ max(tuple)
 Question 3
 
 s=(5,23,9)
-   m=0
+   m=1
    for x in s:
-            m=s[0]*x 
+            m=m*x
    print(m)
 25
 115
@@ -65,11 +65,23 @@ sort= sorted(s.items(), key=lambda x: x[1])
 Question 3
 
 a="MISSISSIPPI"
-dict((letter,a.count(letter))
- for letter in set(a))
-{'M': 1, 'I': 4, 'P': 2, 'S': 4}
-v={}
-v=dict((letter,a.count(letter))
- for letter in set(a))
+l=list(a)
+print(l)
 
+['M','I','S','S','I','S','S','I','P','P','I']
+
+d=()
+
+c1=l.count('M')
+c2=l.count('I')
+c3=l.count('S')
+c4=l.count('P')
+
+d['M']=c1
+d['I']=c2
+d['S']=c3
+d['P']=c4
+print(d)
+
+['M': 1,'I': 4,'S': 4,'P': 2]
 
