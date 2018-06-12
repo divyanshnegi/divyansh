@@ -102,6 +102,9 @@ if (181 <= a <= 200):
 elif (a>200 or a<=0):
     print('INVALID INPUT')
 
+Enter Points:199
+Congratulations! You won a [prize name]! and your price is a:
+ Chocolate
 
 
 
@@ -117,4 +120,9 @@ if ((quantity * 100) > 1000):
 else:
 
     print("Cost is", quantity * 100)
+
+
+Enter quantity
+56
+Cost is 5040.0
 
