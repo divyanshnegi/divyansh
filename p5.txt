@@ -1,0 +1,120 @@
+
+#Question 1
+
+year = 16000
+
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} is a leap year".format(year))
+       else:
+           print("{0} is not a leap year".format(year))
+   else:
+       print("{0} is a leap year".format(year))
+else:
+   print("{0} is not a leap year".format(year))
+
+16000 is a leap year
+
+
+#Question 2
+
+length=input('Length:')
+breadth=input('Breadth:')
+
+if (length==breadth):
+      print('Square')
+else:
+      print('Rectangle')
+
+      Length: 67
+      Breadth: 98
+      Rectangle
+
+
+#Question 3
+
+# age can not be = 0 or negative
+
+a=input('p1:age:')
+b=input('p2:age:')
+c=input('p3:age:')
+
+
+if(a==b!=c or a!=b==c or a!=c==b):
+    print('more than two are of same ages: then there will be more than one older or younger')
+
+else:
+
+     #oldest
+    if (a > b and a > c):
+        print("Oldest is",a)
+
+    elif (b > a and b > c):
+        print("Oldest is",b)
+
+    elif (c > a and  c > b):
+        print("Oldest is", c)
+    else:
+        print("All are equal")
+
+     #youngest
+
+    if (a < b and a < c):
+        print("youngest is",a)
+
+    elif (b < a and b < c):
+        print("youngest is",b)
+
+    elif (c < a and  c < b):
+        print("youngest is", c)
+    else:
+        print("All are equal")
+
+
+p1:age:90
+p2:age:56
+p3:age:21
+Oldest is 90
+youngest is 21
+
+
+#Question 4
+
+
+a=int(input('Enter Points:'))
+
+if(1<=a<=50):
+
+    print('Sorry! No prize this time')
+
+if(51<=a<=150):
+
+    print('Congratulations! You won a [prize name]! and your price is a:\n wodden Dog')
+
+if (151 <= a <= 180):
+
+    print('Congratulations! You won a [prize name]! and your price is a:\n Book')
+
+if (181 <= a <= 200):
+    print('Congratulations! You won a [prize name]! and your price is a:\n Chocolate')
+
+elif (a>200 or a<=0):
+    print('INVALID INPUT')
+
+
+
+
+#Question 5
+
+
+print('Enter quantity')
+quantity = int(input())
+
+if ((quantity * 100) > 1000):
+
+    print("Cost is", ((quantity * 100) - (.1 * quantity * 100)))
+else:
+
+    print("Cost is", quantity * 100)
+
