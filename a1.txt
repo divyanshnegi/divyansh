@@ -1,0 +1,7 @@
+1.git init : Create a new local repository
+2.git clone : Create a working copy of a local repository
+3.git add : Add one or more files to index
+4.git config --global user.name ,5.git config --global user.email : to enter your github details 
+6.git commit -m : Commit changes to head but not yet to the remote repository	
+7.git push origin master : Send changes to the master branch of your remote repository
+8.git status : List the files you've changed and those you still need to add or commit
