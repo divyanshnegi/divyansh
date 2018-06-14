@@ -1,0 +1,253 @@
+Question no 1
+
+
+num = [input('Enter a value: ') for i in range(10)]
+print(num)
+
+Enter a value: 1
+Enter a value: 2
+Enter a value: 3
+Enter a value: 4
+Enter a value: 5
+Enter a value: 6
+Enter a value: 7
+Enter a value: 8
+Enter a value: 9
+Enter a value: 10
+['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+
+
+
+Question no 2
+
+
+a=int(input('input value of x less than 1000: \n' ))
+while(a<=1000):
+ print(a)
+
+input value of x less than 1000: 
+896
+
+896
+896
+896 
+.
+.
+.
+896
+
+
+Question no 3
+
+
+l1= [int(x) for x in input().split()]
+   l2=[i**2 for i in l1]
+   print(l1)
+   print(l2)
+    
+1 8 9 45 10
+[1, 8, 9, 45, 9]   
+[1, 64, 81, 2025, 81]
+
+
+Question no 4
+
+
+myList = [ 4,'a', 'b', 78.68975,'c', 786.571, 'd', 36.787]
+IntList = [x for x in myList if isinstance(x, int)]
+print(IntList)
+
+StrList = [x for x in myList if isinstance(x, str)]
+print(StrList)
+
+FloatList = [x for x in myList if isinstance(x, float)]
+print(FloatList)
+
+[4]
+['a', 'b', 'c', 'd']
+[78.68975, 786.571, 36.787]
+
+
+
+Question no 5
+
+
+for x in range(1,101):
+
+ if x%2==0:
+  even=[x]
+  print('Even numbers are:',even)
+  
+for x in range(1,101,2):
+
+  odd=[x]
+  print('Odd numbers are:',odd)
+
+Even numbers are: [2]
+Even numbers are: [4]
+Even numbers are: [6]
+Even numbers are: [8]
+Even numbers are: [10]
+Even numbers are: [12]
+Even numbers are: [14]
+Even numbers are: [16]
+Even numbers are: [18]
+Even numbers are: [20]
+Even numbers are: [22]
+Even numbers are: [24]
+Even numbers are: [26]
+Even numbers are: [28]
+Even numbers are: [30]
+Even numbers are: [32]
+Even numbers are: [34]
+Even numbers are: [36]
+Even numbers are: [38]
+Even numbers are: [40]
+Even numbers are: [42]
+Even numbers are: [44]
+Even numbers are: [46]
+Even numbers are: [48]
+Even numbers are: [50]
+Even numbers are: [52]
+Even numbers are: [54]
+Even numbers are: [56]
+Even numbers are: [58]
+Even numbers are: [60]
+Even numbers are: [62]
+Even numbers are: [64]
+Even numbers are: [66]
+Even numbers are: [68]
+Even numbers are: [70]
+Even numbers are: [72]
+Even numbers are: [74]
+Even numbers are: [76]
+Even numbers are: [78]
+Even numbers are: [80]
+Even numbers are: [82]
+Even numbers are: [84]
+Even numbers are: [86]
+Even numbers are: [88]
+Even numbers are: [90]
+Even numbers are: [92]
+Even numbers are: [94]
+Even numbers are: [96]
+Even numbers are: [98]
+Even numbers are: [100]
+Odd numbers are: [1]
+Odd numbers are: [3]
+Odd numbers are: [5]
+Odd numbers are: [7]
+Odd numbers are: [9]
+Odd numbers are: [11]
+Odd numbers are: [13]
+Odd numbers are: [15]
+Odd numbers are: [17]
+Odd numbers are: [19]
+Odd numbers are: [21]
+Odd numbers are: [23]
+Odd numbers are: [25]
+Odd numbers are: [27]
+Odd numbers are: [29]
+Odd numbers are: [31]
+Odd numbers are: [33]
+Odd numbers are: [35]
+Odd numbers are: [37]
+Odd numbers are: [39]
+Odd numbers are: [41]
+Odd numbers are: [43]
+Odd numbers are: [45]
+Odd numbers are: [47]
+Odd numbers are: [49]
+Odd numbers are: [51]
+Odd numbers are: [53]
+Odd numbers are: [55]
+Odd numbers are: [57]
+Odd numbers are: [59]
+Odd numbers are: [61]
+Odd numbers are: [63]
+Odd numbers are: [65]
+Odd numbers are: [67]
+Odd numbers are: [69]
+Odd numbers are: [71]
+Odd numbers are: [73]
+Odd numbers are: [75]
+Odd numbers are: [77]
+Odd numbers are: [79]
+Odd numbers are: [81]
+Odd numbers are: [83]
+Odd numbers are: [85]
+Odd numbers are: [87]
+Odd numbers are: [89]
+Odd numbers are: [91]
+Odd numbers are: [93]
+Odd numbers are: [95]
+Odd numbers are: [97]
+Odd numbers are: [99]
+
+
+
+Question no 6
+
+
+def pypart(n):
+
+    for i in range(0, n):
+
+        for j in range(0, i + 1):
+
+            print("* ", end="")
+
+        print("\r")
+
+n = 4
+pypart(n)
+
+
+* 
+* * 
+* * * 
+* * * * 
+
+
+
+Question no 7
+
+
+d = {'x': 1, 'y': 2, 'z': 3} 
+   for key in d:
+   	print (key, 'corresponds to\\', d[key])
+
+x corresponds to 1
+y corresponds to 2
+z corresponds to 3
+
+
+
+Question no 8
+
+
+list1 = []
+   a = int(input('Enter how many elements you want'))
+   for i in range(0, a):
+   	x = input('Enter the numbers into the array')
+   	list1.append(x)
+   	print(list1)
+   f = int(input('enter no. to be searched'))
+   del list1[-1]
+   print(list1)
+   for a in list1:         
+   	print (list1) 
+
+Enter how many elements you want3
+Enter the numbers into the array1
+['1']
+Enter the numbers into the array2
+['1', '2']
+Enter the numbers into the array3
+['1', '2', '3']
+enter no. to be searched3
+['1', '2']
+['1', '2']
+['1', '2']
+
+
