@@ -1,0 +1,93 @@
+Question no 1
+
+
+A time tuple is the usage of a tuple (list of ordered items/functions) for the ordering and notation of time.
+
+
+Question No 2
+
+import time
+print (time.strftime("%H:%M:%S"))
+
+22:59:59
+
+
+Question no 3
+
+
+import datetime
+now = datetime.datetime.now()
+print(now.strftime("%B"))
+
+June
+
+
+Question no 4
+
+
+import datetime
+now = datetime.datetime.now()
+print(now.strftime("%A"))
+
+Tuesday
+
+
+Question No 5
+
+
+import datetime
+now = datetime.datetime.now()
+print(now.day)
+
+19
+
+
+Question no 6
+
+
+import time
+   print(time.asctime(time.localtime()))
+
+Tue Jun 19 03:19:40 2018
+
+
+
+Question No 7
+
+
+import math
+t=int(input("Enter the number:"))
+z=math.factorial(t)
+print(z)
+
+
+Enter the number:19
+121645100408832000
+
+
+
+Question no 8
+
+
+import math
+x=int(input("Enter the number:"))
+y=int(input("Enter the number:"))
+z=math.gcd(x,y)
+print(z)
+
+
+Enter the number:987
+Enter the number:7609
+7
+
+
+Question no 9
+
+
+q9 import os
+   print(os.getcwd())
+   print(os.name)
+
+
+C:\Users\Asus\PycharmProjects\p5\venv
+nt
