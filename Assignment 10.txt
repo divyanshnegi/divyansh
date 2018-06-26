@@ -2,11 +2,11 @@ Question no 1:
 
 class Animal:
  def animal_attribute(self):
-   print("animals are a part of biodiversity")
+    print("animals are a part of biodiversity")
 
 
 class Tiger(Animal):
-   pass
+    pass
 
 
 t = Tiger()
