@@ -70,21 +70,24 @@ date of mission is xx
 Question no 4:
 
 
-class shape:
-   	def __init__(self,l,b):
-        	self.l=l
-                self.b=b
-   	def area(self):
-        	area=self.l*self.b
-        	print(area)
-   class rect(shape):
-   	pass
-   class square(shape):
-   	pass
-   r=rect(100,200)
-   r.area()
-   s=square(90,70)
-   s.area()
+class Shape:
+ def __init__(self,length,breadth):
+    self.length=length
+    self.breadth=breadth
+
+ def Area(self):
+        area=self.length*self.breadth
+        print(area)
+class Rectangle(Shape):
+ pass
+class Square(Shape):
+ pass
+
+r=Rectangle(100,200)
+r.Area()
+s=Shape(90,70)
+s.Area()
+
 
 30000
 6300
