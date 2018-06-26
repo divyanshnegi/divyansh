@@ -1,3 +1,5 @@
+Question no 1:
+
  class Animal:
    	def animal_attribute(self):
         	print("animal")
@@ -9,10 +11,13 @@
 animal
 
 
-File "<ipython-input-6-22fd40ec7500>", line 14
-    print a.f(), b.f()
-          ^
-   SyntaxError: invalid syntax
+Question no 2
+
+A B
+A B
+
+
+Question no 3
 
 
   class Cop:
@@ -62,6 +67,9 @@ The cop Rob 35 years old with 10 years of experience holds the post of Lt
 date of mission is xx
 
 
+Question no 4
+
+
 class shape:
    	def __init__(self,l,b):
         	self.l=l
@@ -73,10 +81,10 @@ class shape:
    	pass
    class square(shape):
    	pass
-   r=rect(10,20)
+   r=rect(100,200)
    r.area()
-   s=square(10,10)
+   s=square(90,70)
    s.area()
 
-200
-100    
+30000
+6300
