@@ -2,7 +2,7 @@ Question no 1:
 
 class Animal:
  def animal_attribute(self):
-   print("animal")
+   print("animals are a part of biodiversity")
 
 
 class Tiger(Animal):
@@ -13,7 +13,7 @@ t = Tiger()
 t.animal_attribute()
 
 
-animal
+animals are a part of biodiversity
 
 
 Question no 2:
