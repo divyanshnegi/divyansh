@@ -1,12 +1,17 @@
 Question no 1:
 
- class Animal:
-   	def animal_attribute(self):
-        	print("animal")
-   class Tiger(Animal):
-   	pass
-   t=Tiger()
-   t.animal_attribute()
+class Animal:
+ def animal_attribute(self):
+   print("animal")
+
+
+class Tiger(Animal):
+   pass
+
+
+t = Tiger()
+t.animal_attribute()
+
 
 animal
 
