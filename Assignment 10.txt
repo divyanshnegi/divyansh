@@ -20,40 +20,50 @@ A B
 Question no 3:
 
 
-  class Cop:
-    	def __init__(self, age, name, work_experience, designation):
-        	pass
-    	def add(self):
-        	age=int(input("enter age "))
-        	self.age=age   
-        	name=input("enter name ")
-        	self.name=name
-        	work_experience=int(input("enter time "))
-        	self.work_experience=work_experience
-        	designation=input("enter designation ")
-        	self.designation=designation
-    	def display(self):
-        	print("The cop",self.name, self.age,"years old with",self.work_experience,"years of experience holds",self.designation,"post")
-    	def update(self):
-        	age=int(input("enter age "))
-        	self.age=age   
-        	name=input("enter name ")
-        	self.name=name
-        	work_experience=int(input("enter time "))
-        	self.work_experience=work_experience
-        	designation=input("enter designation ")
-        	self.designation=designation
-        	print("The cop",self.name, self.age,"years old with",self.work_experience,"years of experience holds the post of",self.designation)
-    class mission(Cop):
-    	def add_mission_detail(self):
-        	print("date of mission is xx")
-    c=Cop(0,'y',0,'x')
-    c.add()
-    c.display()
-    m=mission(0,'y',0,'x')
-    m.update()
-    m.add_mission_detail()
+class Cop:
+ def __init__(self, age, name, work_experience, designation):
+  pass
 
+ def add(self):
+  age = int(input("Enter age: "))
+
+  self.age = age
+  name = input("Enter name ")
+  self.name = name
+  work_experience = int(input("Enter time "))
+  self.work_experience = work_experience
+  designation = input("Enter designation: ")
+  self.designation = designation
+
+  def display(self):
+   print("The cop", self.name, self.age, "years old with", self.work_experience, "years of experience holds",
+      self.designation, "post")
+
+  def update(self):
+    age = int(input("Enter age: "))
+
+    self.age = age
+    name = input("Enter name: ")
+    self.name = name
+    work_experience = int(input("Enter time: "))
+    self.work_experience = work_experience
+    designation = input("Enter designation: ")
+    self.designation = designation
+    print("The cop", self.name, self.age, "years old with", self.work_experience,
+          "years of experience holds the post of", self.designation)
+
+
+class mission(Cop):
+  def add_mission_detail(self):
+   print("date of mission is xx")
+
+
+c = Cop(0, 'y', 0, 'x')
+c.add()
+c.display()
+m = mission(0, 'y', 0, 'x')
+m.update()
+m.add_mission_detail()
 enter age 50
 enter name Alex
 enter time 30
