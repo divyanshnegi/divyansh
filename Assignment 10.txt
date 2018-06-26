@@ -64,16 +64,18 @@ c.display()
 m = mission(0, 'y', 0, 'x')
 m.update()
 m.add_mission_detail()
-enter age 50
-enter name Alex
-enter time 30
-enter designation Captain
-The cop Alex 50 years old with 30 years of experience holds Captain post
-enter age 25
-enter name Rob
-enter time 5
-enter designation Lt
-The cop Rob 35 years old with 10 years of experience holds the post of Lt
+
+
+Enter age: 80
+Enter name: divyansh
+Enter time: 60
+Enter designation: commander
+The cop divyansh 80 years old with 60 years of experience holds commander post
+Enter age: 70
+Enter name: thanos
+Enter time: 50
+Enter designation: general
+The cop thanos 70 years old with 50 years of experience holds the post of general
 date of mission is xx
 
 
