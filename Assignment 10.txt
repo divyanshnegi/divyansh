@@ -11,13 +11,13 @@ Question no 1:
 animal
 
 
-Question no 2
+Question no 2:
 
 A B
 A B
 
 
-Question no 3
+Question no 3:
 
 
   class Cop:
@@ -67,7 +67,7 @@ The cop Rob 35 years old with 10 years of experience holds the post of Lt
 date of mission is xx
 
 
-Question no 4
+Question no 4:
 
 
 class shape:
