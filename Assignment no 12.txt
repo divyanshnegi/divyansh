@@ -1,0 +1,200 @@
+Question no 1:
+
+
+ it has ZeroDivisionError
+
+   a=3
+
+   try:
+
+   	if a<4:
+
+        	a=a/(a-3)
+
+        	print(a)
+
+   except:
+
+   	print("Error")
+
+
+
+Error
+
+
+
+Question no 2:
+
+ it has IndexError
+
+   l=[1,2,3]
+
+   n=3
+
+   try:
+
+        if(n<3)
+
+   		print(l[n])
+
+   except:
+
+   	print("Error")
+
+
+
+Error
+
+
+
+Question no 3:
+
+
+ Output:
+
+   	An Exception.
+
+        
+
+  After that exception is not raised 
+
+
+
+Question no 4:
+
+
+-5.0
+
+   a/b result in 0 
+
+
+
+Questionno 5:
+
+ 1.ImportError
+
+   import numy
+
+
+
+ImportError:No module named 'nmpy'
+
+
+
+   Exception to handle the error
+
+   try:
+
+   	import nmpy
+
+   except:
+
+   	print("wrong package entered")
+
+
+
+wrong package entered
+
+  
+
+   2.ValueError
+
+   a=int(input("enter a number "))
+
+   print(a)
+
+   
+
+enter a number string
+
+ValueError: invalid literal for int() with base 10: 'string'
+
+   
+
+   Exception to handle the error
+
+   try:
+
+   	a=int(input("enter a number "))
+
+    	print(a)
+
+   except ValueError:
+
+   	print("Wrong input") 
+
+   
+
+enter a number a
+
+Wrong input
+
+   
+
+   3.IndexError
+
+   c=[1,2,3]
+
+   print(c[3])
+
+   
+
+IndexError: list index out of range
+
+   
+
+   Exception to handle the error   
+
+   c=[1,2,3]
+
+   try:
+
+   	print(c[3])
+
+   except:
+
+   	print("enter correct index")
+
+
+
+enter correct index
+
+
+
+q6 class AgeTooSmallError(Exception):
+
+   	def __init__(self):
+
+        	pass
+
+   x=0
+
+   while(x==0):
+
+   	try:
+
+        	a=int(input("enter age "))
+
+        	if(a<18):
+
+            		raise AgeTooSmallError
+
+        	else:
+
+            		print("correct age")
+
+        		x=1
+
+    	except AgeTooSmallError:
+
+        	print("age less than 18")
+
+
+
+enter age 13
+
+enter age 19
+
+age less than 18
+
+correct age 
