@@ -1,7 +1,7 @@
 Question no 1:
 
 
- it has ZeroDivisionError
+ZeroDivisionError
 
    a=3
 
@@ -18,14 +18,14 @@ Question no 1:
    	print("Error")
 
 
-
 Error
 
 
 
 Question no 2:
 
- it has IndexError
+
+IndexError
 
    l=[1,2,3]
 
@@ -36,11 +36,10 @@ Question no 2:
         if(n<3)
 
    		print(l[n])
-
    except:
 
-   	print("Error")
 
+   	print("Error")
 
 
 Error
@@ -52,20 +51,21 @@ Question no 3:
 
  Output:
 
-   	An Exception.
-
-        
-
-  After that exception is not raised 
+  File "C:/Users/Asus/PycharmProjects/p5/excption handling.py", line 223
+    print "An exception"
+                       ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(int "An exception")?
 
 
 
 Question no 4:
 
 
--5.0
+  File "C:/Users/Asus/PycharmProjects/p5/excption handling.py", line 230
+    print "a/b result in 0"
+                          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(t "a/b result in 0")?
 
-   a/b result in 0 
 
 
 
