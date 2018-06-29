@@ -52,8 +52,6 @@ Question no 5:
    column=[]
 
 
-
-
    data=f.read()
    for line in data:
    	column.append(line.split("\t"))
