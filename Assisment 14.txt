@@ -3,17 +3,17 @@ Question no 1:
 
 import re
 
-email1=re.split('[@.]','zuck26@facebook.com')
+match = r'(\w+)@([A-Z0-9]+)\.(com)'
 
-email2=re.split('[@.]','page33@google.com')
+emails = "zuck26@facebook.com page33@google.com jeff42@amazon.com"
 
-email3=re.split('[@.]','jeff42@amazon.com')
+a = re.findall(match,emails,flags=re.IGNORECASE)
 
-print( email1+email2+email3 )
+print(a)
 
 
 
-['zuck26', 'facebook', 'com', 'page33', 'google', 'com', 'jeff42', 'amazon', 'com']
+[('zuck26', 'facebook', 'com'), ('page33', 'google', 'com'), ('jeff42', 'amazon', 'com')]
 
 
 
