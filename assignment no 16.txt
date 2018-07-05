@@ -91,15 +91,16 @@ root = Tk()
 root.title('My app')
 root.configure(background='blue')
 
-nameL = Label(root, text='User Name: ')
-nameL.pack()
+label1= Label(root, text='Enter Something:')
+label1.pack()
 
-nameE = Entry(root)
-nameE.pack()
+tf1 = Entry(root)
+tf1.pack()
 
 def print_it():
-   	nameL = Label(root, text=nameE)
-   	nameL.pack()
+ text1=tf1.get()
+ label2= Label(root, text=text1)
+ label2.pack()
 
 
 printB = Button(root, text='Printit', bg='green', \
