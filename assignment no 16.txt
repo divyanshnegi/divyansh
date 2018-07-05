@@ -54,3 +54,55 @@ Question no 3:
 
 
 
+from tkinter import *
+
+root = Tk()
+
+root.title("My APP")
+
+root.configure(background='blue')
+
+LabelA = Label(root, text="thor's hammer is now")
+
+LabelA.pack()
+
+def UserE():
+
+ LabelA.configure(text="Strombeaker")
+
+ChangeB=Button(root, text='Change', bg='green',\
+                  width=25,command=UserE)
+exitB=Button(root, text='exit', width=25, \
+                 command=root.destroy)
+ChangeB.pack()
+exitB.pack()
+root.mainloop()
+
+
+
+
+
+Question no 4:
+
+
+
+from tkinter import *
+root = Tk()
+root.title('My app')
+root.configure(background='blue')
+
+nameL = Label(root, text='User Name: ')
+nameL.pack()
+
+nameE = Entry(root)
+nameE.pack()
+
+def print_it():
+   	nameL = Label(root, text=nameE)
+   	nameL.pack()
+
+
+printB = Button(root, text='Printit', bg='green', \
+                width=25, command=print_it)
+printB.pack()
+root.mainloop()
