@@ -1,0 +1,56 @@
+Question no 1:
+
+from tkinter import *
+
+root=Tk()
+
+hwt=Label(root,text='Hello World')
+
+hwt.pack()
+
+exitB = Button(root, text='exit', width=25, \
+               command=root.destroy)
+
+exitB.pack()
+
+root.mainloop()
+
+
+ 
+
+Question no 2:
+
+
+
+from tkinter import *
+
+root=Tk()
+
+def ByeWorld():
+
+ label = Label(root, text= "Bye World")
+ label.pack()
+
+hwt=Label(root,text='Hello World')
+
+hwt.pack()
+
+buttonA=Button(root,text='SUBMIT',width=70,command=ByeWorld)
+
+
+exitB = Button(root, text='exit', width=25, \
+               command=root.destroy)
+
+buttonA.pack()
+
+exitB.pack()
+
+root.mainloop()
+
+
+
+
+Question no 3:
+
+
+
