@@ -1,0 +1,158 @@
+
+QUESTION NO 1:
+
+
+import pymysql as pm
+
+   try:
+
+   	con =pm.connect(host='localhost', database='pythonpycharm', \
+
+                   user='root', password='6.022*10')
+
+    	cursor=con.cursor()
+
+    	query='create table Books(Book_ID varchar(10) primary key, \
+
+    	       Title_ID varchar(10),Locations varchar(10),Genre char(10))'
+
+    
+
+    	query1='Create table Titles(titleId int(5),ISBN int(13),\
+
+           	publisherId char(10),publicationYear int(4),foreign key(titleId) references Book(titleId))'
+
+    
+
+    	query2='Create table Publishers(publisherId char(10),name char(10),\
+
+            	streetAddress char(10),suiteNo int(3),zipCodeId int(6),\
+
+            	foreign key(publisherId) references Titles(publisherId))'
+
+    
+
+    	query3='Create table ZipCodes(zipCodeId int(6),city char(10),\
+
+            	state char(10),zipCode int(6),foreign key(zipCode) references Publishers(zipCodeId))'
+
+    
+
+    	query4='Create table AuthorsTitles(authorTitleId char(5),authorId char(7),titleId int(5),\
+
+            	foreign key(titleId) references Titles(titleId))'
+
+    
+
+    	query5='Create table Authors(authorId char(7) primary key,fname char(10),mname char(10),\
+
+            	lname char(10),foreign key(authorId) references AuthorsTitles(authorId))'
+
+    cursor.execute(query)
+
+    cursor.execute(query1)
+
+    cursor.execute(query2)
+
+    cursor.execute(query3)
+
+    cursor.execute(query4)
+
+    cursor.execute(query5)
+
+    print('Tables created successfully!!')
+
+
+
+
+QUESTION NO 2:
+
+
+    
+ import pymysql as pm
+
+   con =pm.connect(host='localhost', database='pythonpycharm', \
+ 
+                   user='root', password='6.022*10')
+
+   cursor=con.cursor()
+
+   query='insert into Book values(20,108,"C","x");'
+
+   cursor.execute(query)
+
+
+
+   query1='insert into Titles values(102,6789,"NO50",2000);'
+
+   cursor.execute(query1)
+
+
+
+   query2='insert into Publishers values("123","Rakesh","Tambaram",42,3000);'
+
+   cursor.execute(query2)
+
+
+
+   query3='insert into ZipCodes values(123000,"Delhi","Delhi",110052);'
+
+   cursor.execute(query3)
+
+
+
+   query4='insert into AuthorsTitles values("C141","MANSIME",12345);'
+
+   cursor.execute(query4)
+
+
+
+   query5='insert into Authors values("MANSIME","mansi","kumar","mehta");'
+
+   cursor.execute(query5)
+
+   con.commit()
+
+   print("All values are inserted")
+
+
+
+Question no 3:
+
+
+
+ import pymysql as pm
+
+   con =pm.connect(host='localhost', database='pythonpycharm', \
+
+                   user='root', password='6.022*10')
+
+   cursor=con.cursor()
+
+   print("Original values of the table Book")
+
+   query="select * from Book;"
+
+   cursor.execute(query)
+
+   for i in cursor.fetchall():
+
+   	print(i)
+
+   
+
+   print("After updating the location for bookId 20")
+
+   query='update Book set location = "Mysore" where bookId = 20;'
+
+   cursor.execute(query)
+
+   print("after updating values of the table Book")
+
+   query="select * from Book;"
+
+   cursor.execute(query)
+
+   for i in cursor.fetchall():
+
+   	print(i)
