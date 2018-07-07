@@ -50,7 +50,7 @@ C=np.matmul(A,B)
 
 print(C)
 
-print(np.sum(C)
+print(np.sum(C))
 
 
 
