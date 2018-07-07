@@ -1,0 +1,89 @@
+
+Question no 1:
+
+
+
+ from tkinter import *
+
+   root = Tk()
+
+   z={"rishab": 9646423917, "neha": 9634313991, "shanvi": 3897912878, "kartik":5835356397}
+
+   sb=Scrollbar(root)
+
+   sb.pack(side=RIGHT, fill=Y)
+
+   dbox=Listbox(root, yscrollcommand=sb.set)
+
+   for key in z:
+
+   	dbox.insert(END, key )
+
+   	dbox.pack(side=LEFT, fill=Y)
+
+   sb.configure(command=dbox.yview)
+
+   root.mainloop()
+
+
+
+
+Question no 2:
+
+
+
+ from tkinter import *
+
+
+
+   root = Tk()
+
+   x={"rishab": 9646423917, "neha": 9634313991, "shanvi": 3897912878, "kartik":5835356397}
+
+   sb=Scrollbar(root)
+
+   sb.pack(side=RIGHT, fill=Y)
+
+   dbox=Listbox(root, yscrollcommand=sb.set)
+
+   for key in x:
+
+   	dbox.insert(END, key)
+
+    	dbox.pack(side=LEFT, fill=Y)
+
+   sb.configure(command=dbox.yview)
+
+   def add():
+
+   	x.update({e1.get(): e2.get()})
+
+    	for key in x.keys():
+
+        	i=key
+
+        	print(key)
+
+    	dbox.insert(END, i)
+
+    bottomframe = Frame(root)
+
+    bottomframe.pack(side=BOTTOM)
+
+    lbl = Label(bottomframe,text="Enter the name and number: ")
+
+    lbl.pack()
+
+    e1=Entry(bottomframe, text="Name")
+
+    e2=Entry(bottomframe, text="Phone No.")
+
+    e1.pack()
+
+    e2.pack()
+
+    btn=Button(master=bottomframe, text="ADD", command=add)
+
+    btn.pack()
+
+    root.mainloop()
