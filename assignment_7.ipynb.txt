@@ -1,0 +1,70 @@
+#Question no 1:
+
+
+
+import numpy as np
+
+print(np.random.rand((10,1)))
+
+print(np.mean(np.random.rand((10,1))))
+
+
+
+
+#Question no 2:
+
+
+
+import numpy as np
+
+#standard deviation
+
+print('standard deviation:',np.std(np.random.rand((20,1))))
+
+#varience
+
+np.var('varience',np.random.rand((20,1)))
+
+
+
+
+
+
+
+#Question no 3:
+
+
+
+import numpy as np
+
+print(np.random.rand((10,20)))
+
+A=np.random.rand((10,20))
+B=np.random.rand((20,25))
+
+print(A)
+
+print(B)
+
+C=np.matmul(A,B)
+
+print(C)
+
+print(np.sum(C)
+
+
+
+
+Question no 4:
+
+
+
+import numpy as np
+
+   z=np.random.rand(10, 1)
+
+   print(a)
+
+   f=1/(1+np.exp(-z))
+
+   print("New array: \n",f)
