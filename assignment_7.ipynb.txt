@@ -61,10 +61,13 @@ Question no 4:
 
 import numpy as np
 
-   z=np.random.rand(10, 1)
+   z=np.random.rand((10, 1))
 
-   print(a)
+         
+def func(a):
+   return(1/(1+np.exp(-z)))
 
-   f=1/(1+np.exp(-z))
 
-   print("New array: \n",f)
+R=np.apply_along_axis(func,0,z)
+print(R)
+
