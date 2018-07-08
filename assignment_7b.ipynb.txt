@@ -1,0 +1,62 @@
+#Question no 1:
+
+
+
+import pandas as pd
+
+
+df = pd.DataFrame({
+'Name': ['Kartikey','Divyansh','Ram','Shankalp','shanvi','tanya','Mahima','krishna'],
+'Age': [21,20,20,19,18,17,10,125],
+'Mail_id': ['kartikey.gmail.com','divyansh.yahoo.com','ram.gmail.com','shankalp.gmail.com','shanvi.gmail.com','tanya.yahoo.com','mahima.gmail.com','krishna.gmail.com'],
+'Phone_Number':[1229577890,1293657890,1239147890,1262847890,1234567890,1263957890,1234567890,1233463890]
+ })
+
+print(df)
+
+
+
+
+#Question no 2:
+
+
+
+import pandas as pd
+
+
+df = pd.read_csv('https://raw.githubusercontent.com/Shreyas3108/Weather/master/weather.csv')
+
+#A>
+
+print("\n\n\t\t\tTOP 5\n\n",df.head())
+
+#B>
+
+print("\n\n\t\t\tTOP 10\n\n",df.head(10))
+
+#C>
+
+print("\n\n\t\tBasic statistics on the particular dataset\n\n",df.describe())
+
+#D>
+
+print("\n\n\t\t\tLast 5\n\n",df.tail())
+
+#E>
+
+a=df.columns[2]
+
+z=df[a]
+
+print("\n\n\tCOLUMN NO 2 & basic statistics on it:\n\n",z.describe())
+
+
+
+
+
+
+
+
+
+
+
