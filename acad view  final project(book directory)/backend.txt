@@ -1,0 +1,134 @@
+import pymysql as pm
+
+def Createdb():
+    try:
+        con=pm.connect(host='localhost', database='pythonfinalproject', \
+
+                  user='root', password='6.022*10')
+        
+        cursor = con.cursor()
+        query = 'create table if not exists BookDirectoryapp(id int(5) primary key auto_increment, TITLE varchar(30), AUTHOR varchar(30),YEAR int(4), ISBN int(20))'
+        cursor.execute(query)
+        con.commit()
+
+    except pm.DatabaseError as z:
+        if con:
+            con.rollback()
+            print('Problem occured:',z)
+
+    finally:
+        if cursor:
+            cursor.close()
+        if con:
+            con.close()
+
+def Insert(title, author, year, isbn):
+    try:
+        con=pm.connect(host='localhost', database='pythonfinalproject', \
+
+                  user='root', password='6.022*10')
+        cursor = con.cursor()
+        query = 'Insert into BookDirectoryapp values (NULL, %s, %s, %s, %s)'
+        data = (title, author, year, isbn)
+        cursor.execute(query, data)
+        con.commit()
+
+    except pm.DatabaseError as y:
+        if con:
+            con.rollback()
+            print('Problem occured: ', y)
+
+    finally:
+        if cursor:
+            cursor.close()
+        if con:
+            con.close()
+
+def View():
+    try:
+        con=pm.connect(host='localhost', database='pythonfinalproject', \
+
+                  user='root', password='6.022*10')
+        cursor = con.cursor()
+        query = 'select * from BookDirectoryapp'
+        cursor.execute(query)
+        data = cursor.fetchall()
+        return data
+
+    except pm.DatabaseError as x:
+        if con:
+            con.rollback()
+            print('Problem occured: ', x)
+
+    finally:
+        if cursor:
+            cursor.close()
+        if con:
+            con.close()
+            
+def Search(title='', author='', year='', isbn=''):
+    try:
+        con=pm.connect(host='localhost', database='pythonfinalproject', \
+
+                  user='root', password='6.022*10')
+        cursor = con.cursor()
+        query = 'select * from BookDirectoryapp where title=%s OR author=%s OR year=%s OR isbn=%s'
+        data = (title, author, year, isbn)
+        cursor.execute(query, data)
+        data = cursor.fetchall()
+        return data
+
+    except pm.DatabaseError as w:
+        if con:
+            con.rollback()
+            print('Problem occured: ', w)
+
+    finally:
+        if cursor:
+            cursor.close()
+        if con:
+            con.close()
+
+def Update(id, title, author, year, isbn):
+    try:
+        con=pm.connect(host='localhost', database='pythonfinalproject', \
+
+                  user='root', password='6.022*10')
+        cursor = con.cursor()
+        query = 'update BookDirectoryapp set title=%s, author=%s, year=%s, isbn=%s where id=%s'
+        data = (title, author, year, isbn)
+        cursor.execute(query, data)
+        con.commit()
+
+    except pm.DatabaseError as v:
+        if con:
+            con.rollback()
+            print('Problem occured: ', v)
+
+    finally:    
+        if cursor:
+            cursor.close()
+        if con:
+            con.close()
+            
+ 
+def Delete(id):
+    try:
+        con=pm.connect(host='localhost', database='pythonfinalproject', \
+
+                  user='root', password='6.022*10')
+        cursor = con.cursor()
+        query = 'delete from BookDirectoryapp where id=%s'
+        cursor.execute(query, id)
+        con.commit()
+
+    except pm.DatabaseError as a:
+        if con:
+            con.rollback()
+            print('Problem occured: ', a)
+
+    finally:
+        if cursor:
+            cursor.close()
+        if con:
+            con.close()           
