@@ -68,16 +68,16 @@ def front_delete():
 
 
 # labels defination
-l1 = Label(root, text='Title')
+l1 = Label(root,font='times 10 bold', text='Title')
 l1.grid(row=0, column=0)
 
-l2 = Label(root, text='Author')
+l2 = Label(root,font='times 10 bold', text='Author')
 l2.grid(row=0, column=2)
 
-l3 = Label(root, text='Year')
+l3 = Label(root,font='times 10 bold', text='Year')
 l3.grid(row=1, column=0)
 
-l4 = Label(root, text='ISBN')
+l4 = Label(root,font='times 10 bold', text='ISBN')
 l4.grid(row=1, column=2)
 
 # entry text defination
@@ -129,7 +129,7 @@ b1.grid(row=6, column=3)
 b1 = Button(root, text='Close', width=12, command=root.destroy)
 b1.grid(row=7, column=3)
 
-Createdb()
+Bd()
 front_view()
 
 root.resizable(False, False)
